@@ -9,11 +9,15 @@ import paths from '../../utils/consts/paths';
 
 import ItemPage from '../itemPage/ItemPage';
 import LandingPage from '../landingPage/LandingPage';
+import Header from '../../components/Header';
+import { Toolbar } from '@mui/material';
 
 const AppRouter = () => {
 	return (
 		<>
 			<HistoryRouter history={history}>
+				<Header />
+				<Toolbar />
 				<Routes>
 					<Route
 						path={paths.landingPage}
